@@ -20,13 +20,13 @@ public class Feed : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		manager = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager> ();
+//		manager = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager> ();
 		setTime = false;
 	}
 
 	void Update () {
 		//初期Instatnce
-		if (manager.ReturnMove () == true && count == 0) {
+		if (GameObject.Find("GameManager").GetComponent<GameManager>().ReturnMove () == true && count == 0) {
 			SetFeedInstance ();
 			count = 1;
 		}
