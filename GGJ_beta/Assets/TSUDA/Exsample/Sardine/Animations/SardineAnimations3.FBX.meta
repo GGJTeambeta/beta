@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2fb51133e80d042c48017fb2811dc33a
 timeCreated: 1448082840
 licenseType: Store
 ModelImporter:
   serializedVersion: 18
+=======
+guid: 00d8e044a4a76094188b04a924c36767
+timeCreated: 1448082840
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+>>>>>>> origin/yamasita
   fileIDToRecycleName:
     100000: Armature
     100002: Bone
@@ -107,6 +115,10 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+<<<<<<< HEAD
+=======
+    resampleRotations: 1
+>>>>>>> origin/yamasita
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -114,9 +126,15 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
+<<<<<<< HEAD
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
+=======
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+>>>>>>> origin/yamasita
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
@@ -130,6 +148,10 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+<<<<<<< HEAD
+=======
+      hasAdditiveReferencePose: 0
+>>>>>>> origin/yamasita
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -236,6 +258,10 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+<<<<<<< HEAD
+=======
+      additiveReferencePoseFrame: 0
+>>>>>>> origin/yamasita
     - serializedVersion: 16
       name: SwimDown
       takeName: Take 001
@@ -246,6 +272,10 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+<<<<<<< HEAD
+=======
+      hasAdditiveReferencePose: 0
+>>>>>>> origin/yamasita
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -352,6 +382,10 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+<<<<<<< HEAD
+=======
+      additiveReferencePoseFrame: 0
+>>>>>>> origin/yamasita
     - serializedVersion: 16
       name: SwimRight
       takeName: Take 001
@@ -362,6 +396,10 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+<<<<<<< HEAD
+=======
+      hasAdditiveReferencePose: 0
+>>>>>>> origin/yamasita
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -468,6 +506,10 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+<<<<<<< HEAD
+=======
+      additiveReferencePoseFrame: 0
+>>>>>>> origin/yamasita
     - serializedVersion: 16
       name: SwimLeft
       takeName: Take 001
@@ -478,6 +520,10 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+<<<<<<< HEAD
+=======
+      hasAdditiveReferencePose: 0
+>>>>>>> origin/yamasita
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -584,6 +630,10 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+<<<<<<< HEAD
+=======
+      additiveReferencePoseFrame: 0
+>>>>>>> origin/yamasita
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -604,20 +654,34 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
+<<<<<<< HEAD
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
+=======
+    normalImportMode: 0
+    tangentImportMode: 4
+>>>>>>> origin/yamasita
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
+<<<<<<< HEAD
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
     legTwist: .5
     armStretch: .0500000007
     legStretch: .0500000007
+=======
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+>>>>>>> origin/yamasita
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0

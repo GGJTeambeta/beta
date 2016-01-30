@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f6518397688a949c9b672791c2416ea0
+=======
+guid: 2a3f29bc6d044044482892eaca27e29d
+>>>>>>> origin/yamasita
 timeCreated: 1444912344
 licenseType: Store
 MonoImporter:
