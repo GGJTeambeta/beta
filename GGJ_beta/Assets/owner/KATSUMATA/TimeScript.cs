@@ -8,11 +8,11 @@ public class TimeScript : MonoBehaviour {
     //カウント用
     public float StartTime;
     //配列
-    public string[] TimerBuf = new string[4];
+    public string[] TimerBuf = new string[5];
 
 	void Start () {
         //初期化：カウント
-        StartTime = 4;
+        StartTime = 5;
         
 
 	}
