@@ -6,9 +6,9 @@ using System.Collections;
 public class credit : MonoBehaviour {
 	[SerializeField]
 	string txtLink;
-	[SerializeField]
-	string[] member = new string[8];
-	
+	public string[] member = new string[8];
+
+	//private GameObject[] cloneMember = new GameObject[8];
 
 	// Use this for initialization
 	void Start () {
@@ -31,13 +31,11 @@ public class credit : MonoBehaviour {
 		{
 			string[] details = member[i].Split (',');
 			member [i] = "";//空に
-			member[i] = details[0] +":"+ details[2];
-			Debug.Log (member [i]);
+			member[i] = details[5] +":"+ details[4];
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }
