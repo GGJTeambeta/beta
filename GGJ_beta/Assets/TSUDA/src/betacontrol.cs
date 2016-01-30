@@ -5,52 +5,44 @@ using System.Collections;
 public class betacontrol : MonoBehaviour {
 	Rigidbody betarb;
 
+	//select input
+	[SerializeField]
+	KeyCode bettaup;
+	[SerializeField]
+	KeyCode bettadown;
+	[SerializeField]
+	KeyCode bettaleft;
+	[SerializeField]
+	KeyCode bettaright;
+
 	[SerializeField]
 	float speed = 10.0f;
-	[SerializeField]
-	bool should_to_face_left;
 
 	// Use this for initialization
 	void Start () {
 		betarb = this.GetComponent<Rigidbody> ();
-		should_to_face_left = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.A))
+
+		if (Input.GetKey (bettaleft))
 		{
-			should_to_face_left = true;
+			transform.rotation = new Quaternion (0, 0, 0, 0);
 			betarb.AddForce (Vector3.left *speed);
 		}
-		if (Input.GetKey (KeyCode.W))
+		if (Input.GetKey (bettaup))
 		{
 			betarb.AddForce (Vector3.up *speed);
 		}
-		if (Input.GetKey (KeyCode.S))
+		if (Input.GetKey (bettadown))
 		{
 			betarb.AddForce (Vector3.down *speed);
 		}
-		if (Input.GetKey (KeyCode.D))
+		if (Input.GetKey (bettaright))
 		{
-			should_to_face_left = false;
+			transform.rotation = new Quaternion (0, 180, 0, 0);
 			betarb.AddForce (Vector3.right *speed);
 		}
-		DrawfaceOrientation ();
 	}
-
-	void DrawfaceOrientation()
-	{
-		if (should_to_face_left)
-		{
-			//左向き
-			transform.localRotation = new Quaternion(0,0,0,0);
-		}
-		else
-		{
-			//右向き
-			transform.localRotation = new Quaternion(0,90,0,0);
-		}
-	}
-
 }
