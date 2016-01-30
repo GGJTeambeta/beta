@@ -69,7 +69,7 @@ public class SoundManager : MonoBehaviour {
 		curveRate = 0.0f;
 		nowVolume = 1.0f;
 		updateCurve = null;
-		DontDestroyOnLoad (this);
+		DontDestroyOnLoad (this.gameObject);
 		feed_inCurve = feed_inCurveSetting;
 		feed_outCurve = feed_outCurveSetting;
 
@@ -141,6 +141,17 @@ public class SoundManager : MonoBehaviour {
 		audio.clip = bgm.clip;
 		audio.loop = true;
 		audio.volume = nowVolume*bgm.volume;
+		audio.Play();
+	}
+
+	//SEを再生
+	public static void PlaySE(SE_NAME seEnum) {
+		SEs se = seDictionary[seEnum];
+		AudioSource audio = myObj.GetComponent<AudioSource>();
+
+		audio.loop = false;
+		audio.clip = se.se;
+		audio.volume = nowVolume*se.volume;
 		audio.Play();
 	}
 

@@ -13,6 +13,8 @@ public class gameBgm : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetKeyDown(KeyCode.Return))SoundManager.PlaySE (SE_NAME.THREE_COUNT);
+
 		if(GameObject.Find("gameManager").GetComponent<GameManager>().WorldTimeInt >= 3){//カウントダウン後の移動開始
 			if (isPlayed == false) {
 				//鳴らすBGMを入れる

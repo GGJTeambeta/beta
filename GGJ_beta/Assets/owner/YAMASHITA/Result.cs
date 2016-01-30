@@ -16,7 +16,7 @@ public class Result : MonoBehaviour {
 
 	void Update () {
 		if (manager.ReturnGameFinish() == true) {
-			if (manager.loserName == "Player1") {
+			if (manager. ReturnLoserName() == "Player1") {
 				resultImage.sprite = winner [0];
 				resultImage.enabled = true;
 			}else {
