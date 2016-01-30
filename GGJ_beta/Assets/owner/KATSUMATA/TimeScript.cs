@@ -26,11 +26,4 @@ public class TimeScript : MonoBehaviour {
         //テキスト表示
         GetComponent<Text>().text = TimerBuf[((int)StartTime)].ToString();
 	}
-
-
-        
-
-        
-
-     
 }

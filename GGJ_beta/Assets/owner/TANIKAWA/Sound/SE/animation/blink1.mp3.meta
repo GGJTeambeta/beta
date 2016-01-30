@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9ad1cb3e6039d6149a4fefce789678d8
 timeCreated: 1454146455
 licenseType: Pro
+=======
+guid: 86a8c372d14970e4f89ecd80c30999ab
+>>>>>>> origin/yamasita
 AudioImporter:
   serializedVersion: 6
   defaultSettings:
