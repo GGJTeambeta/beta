@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 094a76b96e03819468fcc5cc12b812a4
+timeCreated: 1454144198
+=======
 guid: 711ffe1776d95dd499313b1ccc19564c
 timeCreated: 1454142320
+>>>>>>> origin/Ishihata
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
