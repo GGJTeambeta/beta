@@ -11,7 +11,7 @@ public class gameBgm : MonoBehaviour {
 		isPlayed = false;
 
 		//鳴らすJingleを入れる
-		SoundManager.PlaySE (SE_NAME.THREE_COUNT);	
+		SoundManager.PlaySE (SE_NAME.THREE_COUNT, gameObject);	
 	}
 	
 	// Update is called once per frame
