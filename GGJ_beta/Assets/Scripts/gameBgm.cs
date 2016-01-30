@@ -9,6 +9,9 @@ public class gameBgm : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		isPlayed = false;
+
+		//鳴らすJingleを入れる
+		SoundManager.PlaySE (SE_NAME.THREE_COUNT);	
 	}
 	
 	// Update is called once per frame
