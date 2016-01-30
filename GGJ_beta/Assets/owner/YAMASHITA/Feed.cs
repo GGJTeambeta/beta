@@ -55,10 +55,9 @@ public class Feed : MonoBehaviour {
 									   Random.Range (Min_Y, Max_Y),
 									   0);
 
-			GameObject newImage = Instantiate (obj, 
-										  feed_pos [i], 
-				Quaternion.identity) as GameObject;
-			//newImage.transform.SetParent (canvas.transform);
+			GameObject newObj = Instantiate (obj, 
+				                             feed_pos [i], 
+				                             Quaternion.identity) as GameObject;
 		} 
 	}
 }
