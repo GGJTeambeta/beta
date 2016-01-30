@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 6974a0649cc744ee1aca57673cff25c8
+<<<<<<< HEAD
 timeCreated: 1454116428
+=======
+timeCreated: 1454117020
+>>>>>>> origin/tsuda_control_beta
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
