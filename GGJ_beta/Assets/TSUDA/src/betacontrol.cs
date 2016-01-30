@@ -41,7 +41,7 @@ public class betacontrol : MonoBehaviour {
 		}
 		if (Input.GetKey (bettaright))
 		{
-			transform.rotation = new Quaternion (0, 90, 0, 0);
+			transform.rotation = new Quaternion (0, 180, 0, 0);
 			betarb.AddForce (Vector3.right *speed);
 		}
 	}
