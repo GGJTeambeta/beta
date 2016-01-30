@@ -25,11 +25,6 @@ public class TimeScript : MonoBehaviour {
         if (StartTime < 0) StartTime = 0;
         //テキスト表示
         GetComponent<Text>().text = TimerBuf[((int)StartTime)].ToString();
-
-        if(StartTime == 0){
-            //プレイヤーが動けるようにする
-            manager.GetComponent<GameManager>().SetMove(true);
-        }
 	}
 
 
