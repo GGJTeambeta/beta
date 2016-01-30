@@ -26,7 +26,7 @@ public class Feed : MonoBehaviour {
 
 	void Update () {
 		//初期Instatnce
-		if (GameObject.Find("GameManager").GetComponent<GameManager>().ReturnMove () == true && count == 0) {
+		if (GameObject.Find("gameManager").GetComponent<GameManager>().ReturnMove () == true && count == 0) {
 			SetFeedInstance ();
 			count = 1;
 		}
@@ -55,10 +55,9 @@ public class Feed : MonoBehaviour {
 									   Random.Range (Min_Y, Max_Y),
 									   0);
 
-			GameObject newImage = Instantiate (obj, 
-										  feed_pos [i], 
-				Quaternion.identity) as GameObject;
-			//newImage.transform.SetParent (canvas.transform);
+			GameObject newObj = Instantiate (obj, 
+				                             feed_pos [i], 
+				                             Quaternion.identity) as GameObject;
 		} 
 	}
 }
