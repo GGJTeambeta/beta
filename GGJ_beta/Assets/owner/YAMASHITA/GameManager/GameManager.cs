@@ -7,16 +7,17 @@ public class GameManager : MonoBehaviour {
 
 	public bool Move;					//Playerたちが動けるかどうか
 	public bool GameFinish;				//Game終了時
+	public string loserName;            //負けたPlayerがどちらか
 
 	// Use this for initialization
 	void Awake () {
 		Move = false;
 		GameFinish = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		WorldTime += Time.deltaTime;
+		WorldTime += 1.0f * Time.deltaTime;
 		WorldTimeInt = (int)WorldTime;
 	}
 
@@ -29,12 +30,20 @@ public class GameManager : MonoBehaviour {
 	}
 
 	/**************必要か悩んだので追加(不要なら後で削除)*************/
-	public bool SetMove(bool set){
-		return Move = set;
+	//３カウントが終わってPlayerが動き出すためのフラグをTrueにする.
+	public bool SetMove(){
+		return Move = true;
 	}
 
-	public bool SetGameFinish(bool set){
-		return GameFinish = set;
+	//死んだ時用. 引数は負けたPlayerの名前を入れる.
+	public bool SetGameFinish(string str){
+		loserName = str;
+		return GameFinish = true;
+	}
+
+	//勝ち負け表示時用.
+	public string ReturnLoserName() {
+		return loserName;
 	}
 	/****************************************************************/
 }

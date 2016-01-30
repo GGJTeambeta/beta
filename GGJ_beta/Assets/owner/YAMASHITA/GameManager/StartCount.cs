@@ -30,7 +30,7 @@ public class StartCount : MonoBehaviour {
 		countNum++;
 		if(countNum>=spriteNum)//最後の数だったら
 		{
-			manager.SetMove (true);
+			//manager.SetMove ("loser");
 			Destroy(gameObject);//このオブジェクトの削除
 			return;
 		}
