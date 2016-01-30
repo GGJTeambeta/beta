@@ -69,7 +69,7 @@ public class SoundManager : MonoBehaviour {
 		curveRate = 0.0f;
 		nowVolume = 1.0f;
 		updateCurve = null;
-		DontDestroyOnLoad (this.gameObject);
+		DontDestroyOnLoad (this);
 		feed_inCurve = feed_inCurveSetting;
 		feed_outCurve = feed_outCurveSetting;
 
