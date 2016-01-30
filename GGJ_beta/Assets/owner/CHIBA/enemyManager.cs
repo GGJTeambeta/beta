@@ -11,7 +11,9 @@ public class enemyManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if(GameObject.Find("gameManager").GetComponent<GameManager>().WorldTimeInt >= 3){//カウントダウン後の移動開始
+			GameObject.Find("Enemy").GetComponent<Animator>().SetBool("isStart", true);
+		}
 	}
 
 	void OnTriggerEnter(Collider col){
