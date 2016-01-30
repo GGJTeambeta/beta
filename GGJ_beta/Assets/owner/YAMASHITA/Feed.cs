@@ -4,8 +4,8 @@ using System.Collections;
 
 //えさのスクリプト
 public class Feed : MonoBehaviour {
-	public Image obj;
-	public Canvas canvas;
+	public GameObject obj;
+	//public Canvas canvas;
 	private Vector3[] feed_pos = new Vector3[10];	 //それぞれのポジション
 
 	public float Min_X = 0f, Max_X = 0f; 			 //Xの最小値,最大値
@@ -20,13 +20,13 @@ public class Feed : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		manager = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager> ();
+//		manager = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager> ();
 		setTime = false;
 	}
 
 	void Update () {
 		//初期Instatnce
-		if (manager.ReturnMove () == true && count == 0) {
+		if (GameObject.Find("GameManager").GetComponent<GameManager>().ReturnMove () == true && count == 0) {
 			SetFeedInstance ();
 			count = 1;
 		}
@@ -55,10 +55,10 @@ public class Feed : MonoBehaviour {
 									   Random.Range (Min_Y, Max_Y),
 									   0);
 
-			Image newImage = Instantiate (obj, 
+			GameObject newImage = Instantiate (obj, 
 										  feed_pos [i], 
-										  Quaternion.identity) as Image;
-			newImage.transform.SetParent (canvas.transform);
+				Quaternion.identity) as GameObject;
+			//newImage.transform.SetParent (canvas.transform);
 		} 
 	}
 }
