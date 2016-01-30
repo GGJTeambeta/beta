@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4884c1f3ad27da2428883c73e203f21a
 timeCreated: 1454144206
+=======
+guid: 40b89ce20d54c0b4fa0cf164c0ec0911
+timeCreated: 1454142323
+>>>>>>> origin/Ishihata
 licenseType: Pro
 AudioImporter:
   serializedVersion: 6
