@@ -26,7 +26,7 @@ public class Feed : MonoBehaviour {
 
 	void Update () {
 		//初期Instatnce
-		if (GameObject.Find("GameManager").GetComponent<GameManager>().ReturnMove () == true && count == 0) {
+		if (GameObject.Find("gameManager").GetComponent<GameManager>().ReturnMove () == true && count == 0) {
 			SetFeedInstance ();
 			count = 1;
 		}
