@@ -7,11 +7,13 @@ public class enemyManager : MonoBehaviour {
 	public GameObject pos2;
 	public float speed;
 	private float sh;
-	private bool isAnim;
+	private bool isAnim1;
+	private bool isAnim2;
 //	public Transform target;
 	// Use this for initialization
 	void Start () {
-		isAnim = false;
+		isAnim1 = false;
+		isAnim2 = false;
 		isPlayer = false;
 		sh = Screen.height;
 	}
@@ -29,21 +31,22 @@ public class enemyManager : MonoBehaviour {
 			GameObject.Find ("Enemy").GetComponent<Animator> ().Stop ();
 			LookAt2D (pos1);
 			Move (pos1);
-			isAnim = true;
-		} else {
-			if(isAnim == true){
+			isAnim1 = true;
+		} else if(!playerOut.outP1){
+			if(isAnim1 == true){
 				GameObject.Find ("Enemy").GetComponent<Animator> ().Play ("betaGirl", 0, 0.0f);
-				isAnim = false;
+				isAnim1 = false;
 			}
 		}
 		if (playerOut.outP2) {
 			GameObject.Find ("Enemy").GetComponent<Animator> ().Stop ();
 			LookAt2D (pos2);
 			Move (pos2);
-		} else {
-			if(isAnim == true){
+			isAnim2 = true;
+		} else if(!playerOut.outP2){
+			if(isAnim2 == true){
 				GameObject.Find ("Enemy").GetComponent<Animator> ().Play ("betaGirl", 0, 0.0f);
-				isAnim = false;
+				isAnim2 = false;
 			}
 		}
 	}
@@ -60,6 +63,9 @@ public class enemyManager : MonoBehaviour {
 	}
 	void LookAt2D(GameObject target)
 	{
+		if(target == null){
+			return;
+		}
 		// 指定オブジェクトと回転さすオブジェクトの位置の差分(ベクトル)
 		Vector3 pos = target.transform.position - transform.position;
 		// ベクトルのX,Yを使い回転角を求める
@@ -77,6 +83,9 @@ public class enemyManager : MonoBehaviour {
 	}
 
 	void Move(GameObject target){
+		if(target == null){
+			return;
+		}
 		this.gameObject.GetComponent<Rigidbody>().velocity = (target.transform.position - this.transform.position).normalized * speed;
 	}
 }
